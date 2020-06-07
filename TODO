@@ -1,0 +1,24 @@
+Edit:
+  
+  Make it possible to Enable/disable iconEsp when boxEsp is disabled
+
+Add:
+
+    Now playing window + spam (amarok 2)
+
+Config:
+  Improve humanized to make it look less aimbotizh
+ 
+
+Changes:
+  Changed low ammo/health messages + made them white only (annoying when they flash..)
+  Re-added team/enemy spawntimer
+  Changed original hud settings, enabled esp radar when original hud is enabled
+  Added a new Custom crosshair  
+  Added Black pbss option + custom instead of only one of them
+  Centered class and weapon esp
+  New unban script, solves the pb guid auth unknown error
+  Re-added all cams
+  Increased humanvalue bar
+  Changed random name selection, I somehow ended up with same random names all the time, hopefully solved n0w!
+  

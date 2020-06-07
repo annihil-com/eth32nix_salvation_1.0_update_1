@@ -1,0 +1,9 @@
+#!/bin/sh
+export ETH32_DIR="/home/stjaernan/Desktop/salvation_src"
+export ETH32_ET="/opt/enemy-territory"
+export LD_PRELOAD="$ETH32_DIR/libsETH32nix_priv.so $ETH32_DIR/et-sdl-sound.so"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
+cd $ETH32_ET
+
+exec ./et.x86 +set com_zonemegs 128 +exec autoexec.cfg +cl_maxpackets 100 +r_customheight 900 +r_customwidth 1400 +r_fullscreen 0 +r_mode -1 +set net_port $(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d" ") "$@"
+unset LD_PRELOAD
